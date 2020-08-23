@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
 var vue = new Vue({
-	el: "#vue",
+	el: '#vue',
 	data: {
 		navSeT: false,
 		navSeF: true,
-		navSt: "navStF"
+		navSt: 'navStF'
 	},
 	methods: {
 		navF() {
@@ -14,13 +14,16 @@ var vue = new Vue({
 		},
 
 		goToZm() {
-			location.href = "index.html";
+			location.href = 'index.html';
 		},
 		goToVkBuy() {
-			location.href = "https://vk.com/rubin_alexey";
+			location.href = 'https://vk.com/rubin_alexey';
 		},
 		goToVkSay() {
-			location.href = "https://vk.com/im?sel=550222194";
+			location.href = 'https://vk.com/im?sel=550222194';
+		},
+		goToDiscord() {
+			location.href = 'https://discord.gg/QEwp97z';
 		}
 	}
 })
