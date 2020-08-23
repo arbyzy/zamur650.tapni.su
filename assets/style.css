@@ -1,0 +1,140 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap");
+body {
+  font-family: 'Nunito', sans-serif;
+  resize: none;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  height: 100%;
+}
+
+nav div {
+  height: 100%;
+  background-color: white;
+}
+
+nav img {
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 50px;
+}
+
+.imageTop {
+  width: 100%;
+  padding-top: 1px;
+  height: 100vh;
+  background: url("images/top-image.png") center;
+  text-align: center;
+  color: white;
+  font-size: large;
+}
+
+.imageTop h1 {
+  padding-top: 20%;
+}
+
+.projects {
+  padding-top: 1px;
+  text-align: center;
+  background-color: #a8ffb4;
+}
+
+.shop {
+  background-color: #2b3135;
+  padding-top: 1px;
+  text-align: center;
+  color: white;
+}
+
+.list {
+  display: inline-flex;
+  width: 100%;
+  overflow: auto;
+  text-align: center;
+  color: black;
+}
+
+.block {
+  padding: auto;
+  border-radius: 20px;
+  background-color: white;
+  background-size: 100% 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.block img {
+  border-radius: 20px;
+  width: 35vh;
+  margin: 20px;
+}
+
+.know {
+  text-align: center;
+  padding-top: 1px;
+  background: url("images/know.png");
+  color: white;
+}
+
+.knowList {
+  display: inline-flex;
+  width: 100%;
+  overflow: auto;
+  text-align: center;
+}
+
+.knowList img {
+  border-radius: 20px;
+  height: 30vh;
+  margin: 20px;
+}
+
+button {
+  color: black;
+  border-color: black;
+  background: none;
+  border: 2px solid;
+  border-radius: 5px 5px 5px 5px;
+  height: 40px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #f2fff1;
+}
+
+h1 {
+  font-family: 'Noto Serif', serif;
+}
+
+.end {
+  background-color: #383838;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.end img {
+  width: 60px;
+  margin: 10px;
+  filter: invert(100%);
+}
+
+.end button {
+  margin: 10px;
+  color: white;
+  border-color: white;
+}
+
+.end button:hover {
+  background-color: #414141;
+}
+/*# sourceMappingURL=style.css.map */
