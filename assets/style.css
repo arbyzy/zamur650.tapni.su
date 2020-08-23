@@ -1,5 +1,5 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap');
 body {
   font-family: 'Nunito', sans-serif;
   resize: none;
@@ -26,7 +26,7 @@ nav img {
   width: 100%;
   padding-top: 1px;
   height: 100vh;
-  background: url("images/top-image.png") center;
+  background: url('images/top-image.png') center;
   text-align: center;
   color: white;
   font-size: large;
@@ -80,7 +80,7 @@ nav img {
 .know {
   text-align: center;
   padding-top: 1px;
-  background: url("images/know.png");
+  background: url('images/know.png');
   color: white;
 }
 

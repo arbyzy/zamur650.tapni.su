@@ -1,77 +1,77 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>Замур</title>
-	<link rel="stylesheet" href="assets/style.css">
-	<link rel="shortcut icon" href="assets/images/logo.ico">
+	<link rel='stylesheet' href='assets/style.css'>
+	<link rel='shortcut icon' href='assets/images/logo.ico'>
 </head>
 <body>
-	<div id="vue">
+	<div id='vue'>
 		<nav>
-			<img v-show="navSeF" v-on:click="navF()" src="assets/icons/align-justified.svg">
-			<div v-show="navSeT">
-				<img v-on:click="navF()" src="assets/icons/align-justified.svg"><br>
-				<a href="index.html"><img src="assets/icons/home.svg"></a><br>
-				<a href="buy.html"><img src="assets/icons/shopping-cart.svg"></a>
+			<img v-show='navSeF' v-on:click='navF()' src='assets/icons/align-justified.svg'>
+			<div v-show='navSeT'>
+				<img v-on:click='navF()' src='assets/icons/align-justified.svg'><br>
+				<a href='index.html'><img src='assets/icons/home.svg'></a><br>
+				<a href='buy.html'><img src='assets/icons/shopping-cart.svg'></a>
 			</div>
 		</nav>
 
-		<div class="imageTop">
+		<div class='imageTop'>
 			<h1>Магазин</h1>
 		</div>
 
-		<div class="shop">
-			<div class="list">
-				<div class="block">
+		<div class='shop'>
+			<div class='list'>
+				<div class='block'>
 					<h1>Простой сайт</h1>
-					<img src="assets/images/standart.png">
+					<img src='assets/images/standart.png'>
 					<p>Простой сайт без Java Script</p>
-					<button v-on:click="goToVkBuy()">Купить</button>
+					<button v-on:click='goToVkBuy()'>Купить</button>
 				</div>	
-				<div class="block">
+				<div class='block'>
 					<h1>Cайт c js</h1>
-					<img src="assets/images/standartjs.png">
+					<img src='assets/images/standartjs.png'>
 					<p>Простой сайт c Java script</p>
-					<button v-on:click="goToVkBuy()">Купить</button>
+					<button v-on:click='goToVkBuy()'>Купить</button>
 				</div>	
-				<div class="block">
+				<div class='block'>
 					<h1>Сайт с vue.js (средний)</h1>
-					<img src="assets/images/mediumvue.png">
+					<img src='assets/images/mediumvue.png'>
 					<p>Сайт с vue.js подходит для маленького интернет-магазина</p>
-					<button v-on:click="goToVkBuy()">Купить</button>
+					<button v-on:click='goToVkBuy()'>Купить</button>
 				</div>	
-				<div class="block">
+				<div class='block'>
 					<h1>Сайт с vue.js (большой)</h1>
-					<img src="assets/images/bigvue.png">
+					<img src='assets/images/bigvue.png'>
 					<p>Сайт с vue.js подходит для большого проекта</p>
-					<button v-on:click="goToVkBuy()">Купить</button>
+					<button v-on:click='goToVkBuy()'>Купить</button>
 				</div>
-				<div class="block">
+				<div class='block'>
 					<h1>Discord.js бот</h1>
-					<img src="assets/images/futureWeb.jpg">
+					<img src='assets/images/futureWeb.jpg'>
 					<p>Подходит для Discord сервера</p>
-					<button v-on:click="goToVkBuy()">Купить</button>
+					<button v-on:click='goToVkBuy()'>Купить</button>
 				</div>
 			</div>
 		</div>	
 
-		<div class="end">
+		<div class='end'>
 			<h1>Рыбин Алексей</h1>
 			<p>Начинающий frontend разработчик</p>
-			<button v-on:click="goToVkSay()">Связаться</button>
-			<div class="images">
-				<a href="https://www.youtube.com/channel/UCkr6i6Gnv5ESl8532iLLwDw"><img src="assets/icons/brand-youtube.svg"></a>
-				<a href="https://vk.com/rubin_alexey"><img src="assets/icons/brand-vk.svg"></a>
-				<a href="https://www.twitch.tv/zamur_mur"><img src="assets/icons/brand-twitch.svg"></a>
-				<a href="https://www.instagram.com/zamur_mur"><img src="assets/icons/brand-instagram.svg"></a>
-				<a href="https://www.facebook.com/profile.php?id=100053081611770"><img src="assets/icons/brand-facebook.svg"></a>
-				<a href="https://github.com/Zamur650"><img src="assets/icons/brand-github.svg"></a>
+			<button v-on:click='goToVkSay()'>Связаться</button>
+			<div class='images'>
+				<a href='https://www.youtube.com/channel/UCkr6i6Gnv5ESl8532iLLwDw'><img src='assets/icons/brand-youtube.svg'></a>
+				<a href='https://vk.com/rubin_alexey'><img src='assets/icons/brand-vk.svg'></a>
+				<a href='https://www.twitch.tv/zamur_mur'><img src='assets/icons/brand-twitch.svg'></a>
+				<a href='https://www.instagram.com/zamur_mur'><img src='assets/icons/brand-instagram.svg'></a>
+				<a href='https://www.facebook.com/profile.php?id=100053081611770'><img src='assets/icons/brand-facebook.svg'></a>
+				<a href='https://github.com/Zamur650'><img src='assets/icons/brand-github.svg'></a>
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script src="assets/main.js"></script>
+	<script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
+	<script src='assets/main.js'></script>
 	</body>
 </html>
