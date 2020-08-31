@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/icons/icon.ico" type="image/x-icon">
+  <title>Pokedex</title>
+</head>
+<body>
+  <div id="vue">
+    <div class="searchBlock">
+      <input v-model="input" placeholder="Name or id">
+      <button v-on:click="pokemonName">Ok</button><br>
+    </div>
+    <img :src=image>
+    <h1>{{ name }}</h1>      
+    <p>Id: {{ id }}</p>
+    <p>Type: {{ type }}</p>
+    <p>Attack: {{ attack }}</p>
+    <p>Defense: {{ defense }}</p>
+    <p>Special attack: {{ special_attack }}</p>
+    <p>Special defense: {{ special_defense }}</p>
+    <p>Speed: {{ speed }}</p>
+    <p>Height: {{ height }}</p>
+    <p>Weight: {{ weight }}</p>
+  </div>
+  <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+  <script src="main.js"></script>  
+</body>
+</html>
