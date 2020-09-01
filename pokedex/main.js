@@ -19,6 +19,20 @@ var vue = new Vue({
   },
   methods: {
     pokemonName() {
+      if (this.input === '') {
+        this.image = 'assets/images/error.svg';
+        this.name = 'error';
+        this.id = 0;
+        this.type = 'error'
+        this.hp = 0;
+        this.attack = 0;
+        this.defense = 0;
+        this.special_attack = 0;
+        this.special_defense = 0;
+        this.speed = 0;
+        this.height = 0;
+        this.weight = 0;
+      }
       P.getPokemonByName(this.input.toLowerCase())
         .then(response => {
           this.image = response.sprites.front_default;
