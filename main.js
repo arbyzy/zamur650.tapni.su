@@ -16,6 +16,9 @@ var vue = new Vue({
 		goToZm() {
 			location.href = 'index.html';
 		},
+		goToPd() {
+			location.href = 'pokedex/index.html';
+		},
 		goToVkBuy() {
 			location.href = 'https://vk.com/rubin_alexey';
 		},

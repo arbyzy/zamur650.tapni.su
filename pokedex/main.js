@@ -7,7 +7,7 @@ var vue = new Vue({
     image: 'assets/images/photo.svg',
     name: 'Name',
     id: 0,
-    type: 'none',
+    type: ['none', 'none'],
     hp: 0,
     attack: 0,
     defense: 0,
@@ -19,26 +19,17 @@ var vue = new Vue({
   },
   methods: {
     pokemonName() {
-      if (this.input === '') {
-        this.image = 'assets/images/error.svg';
-        this.name = 'error';
-        this.id = 0;
-        this.type = 'error'
-        this.hp = 0;
-        this.attack = 0;
-        this.defense = 0;
-        this.special_attack = 0;
-        this.special_defense = 0;
-        this.speed = 0;
-        this.height = 0;
-        this.weight = 0;
-      }
       P.getPokemonByName(this.input.toLowerCase())
         .then(response => {
           this.image = response.sprites.front_default;
           this.name = response.name;
           this.id = response.id;
-          this.type = response.types[0].type.name
+          this.type[0] = response.types[0].type.name
+          try {
+            this.type[1] = response.types[1].type.name
+          } catch{
+            this.type[1] = 'none'
+          }
           this.hp = response.stats[0].base_stat;
           this.attack = response.stats[1].base_stat;
           this.defense = response.stats[2].base_stat;
@@ -51,18 +42,7 @@ var vue = new Vue({
             this.image = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${this.id}.png`
           }  
         }).catch( err => {
-          this.image = 'assets/images/error.svg';
-          this.name = 'error';
-          this.id = 0;
-          this.type = 'error'
-          this.hp = 0;
-          this.attack = 0;
-          this.defense = 0;
-          this.special_attack = 0;
-          this.special_defense = 0;
-          this.speed = 0;        
-          this.height = 0;
-          this.weight = 0;
+          alert('Error!');
         });
     }
   }
