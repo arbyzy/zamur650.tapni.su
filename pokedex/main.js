@@ -1,3 +1,5 @@
+'use strict';
+
 const P = new Pokedex.Pokedex();
 
 var vue = new Vue({
