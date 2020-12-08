@@ -10,12 +10,8 @@
 <body>
 	<div id='vue'>
 		<nav>
-			<img v-show='navSeF' v-on:click='navF()' src='assets/icons/align-justified.svg'>
-			<div v-show='navSeT'>
-				<img v-on:click='navF()' src='assets/icons/align-justified.svg'><br>
-				<a href='index.html'><img src='assets/icons/home.svg'></a><br>
-				<a href='buy.html'><img src='assets/icons/shopping-cart.svg'></a>
-			</div>
+			<a href='index.html'><img src='assets/icons/home.svg'></a>
+			<a href='buy.html'><img src='assets/icons/shopping-cart.svg'></a>
 		</nav>
 
 		<div class='imageTop'>
@@ -36,8 +32,8 @@
 					<h1>FurretBot</h1>
 					<img src='assets/images/futureWeb.jpg'>
 					<p>Discord бот</p>
-					<button v-on:click='goToDiscord()'>Зайти на сервер</button>
-				</div><br>
+					<button v-on:click='goToVkSay'>Связаться</button>
+				</div>
 				<div class='block'>
 					<h1>Pokedex</h1>
 					<img src='assets/images/futureWeb.jpg'>
