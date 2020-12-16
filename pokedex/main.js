@@ -7,7 +7,7 @@ var vue = new Vue({
   data: {
     input: '',
     image: 'assets/images/photo.svg',
-    name: 'Name',
+    name: 'none',
     id: 0,
     type: ['none', 'none'],
     hp: 0,
