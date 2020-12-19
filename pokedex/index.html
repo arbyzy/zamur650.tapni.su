@@ -14,10 +14,8 @@
       <button v-on:click="pokemonName()">Ok</button><br>
     </div>
     <img :src=image>
-    <h1>Name: {{ name }}</h1>      
-    <p>Id: {{ id }}</p>
-    <p>Type 1: {{ type[0] }} </p>
-    <p>Type 2: {{ type[1] }} </p>
+    <h1>Name: {{ name + ' (' + id + ')' }}</h1>
+    <p>Types: {{ type[0] + type[1] }} </p>
     <p>Attack: {{ attack }}</p>
     <p>Defense: {{ defense }}</p>
     <p>Special attack: {{ special_attack }}</p>

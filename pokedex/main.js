@@ -9,7 +9,7 @@ var vue = new Vue({
     image: 'assets/images/photo.svg',
     name: 'none',
     id: 0,
-    type: ['none', 'none'],
+    type: ['none', ''],
     hp: 0,
     attack: 0,
     defense: 0,
@@ -26,11 +26,11 @@ var vue = new Vue({
           this.image = response.sprites.front_default;
           this.name = response.name;
           this.id = response.id;
-          this.type[0] = response.types[0].type.name
+          this.type[0] = response.types[0].type.name;
           try {
-            this.type[1] = response.types[1].type.name
+            this.type[1] = '/' + response.types[1].type.name;
           } catch{
-            this.type[1] = 'none'
+            this.type[1] = '';
           }
           this.hp = response.stats[0].base_stat;
           this.attack = response.stats[1].base_stat;
@@ -42,7 +42,7 @@ var vue = new Vue({
           this.weight = response.weight;    
           if (this.image === null) {
             this.image = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${this.id}.png`
-          }  
+          }
         }).catch( err => {
           alert('Error!');
         });
