@@ -17,7 +17,8 @@ var vue = new Vue({
     special_defense: 0,
     speed: 0,
     height: 0,
-    weight: 0    
+    weight: 0,
+    moves: 'none'
   },
   methods: {
     pokemonName() {
@@ -39,12 +40,19 @@ var vue = new Vue({
           this.special_defense = response.stats[4].base_stat;
           this.speed = response.stats[5].base_stat;
           this.height = response.height;
-          this.weight = response.weight;    
-          if (this.image === null) {
+          this.weight = response.weight;
+          this.moves = '';
+          for (let i = 0; i in response.moves; i++){
+            P.getMoveByName(response.moves[i].move.name).then(response => {
+              this.moves += `${response.name}: accuracy: ${response.accuracy}, damage class: ${response.damage_class.name}, type: ${response.type.name}, pp: ${response.pp}\n`;
+            });
+          }
+
+          if (this.image == null) {
             this.image = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${this.id}.png`
           }
         }).catch( err => {
-          alert('Error!');
+          alert('Error!' + err);
         });
     }
   }
