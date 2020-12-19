@@ -9,7 +9,7 @@ var vue = new Vue({
     image: 'assets/images/photo.svg',
     name: 'none',
     id: 0,
-    type: ['none', ''],
+    type: ['none', ' '],
     hp: 0,
     attack: 0,
     defense: 0,
