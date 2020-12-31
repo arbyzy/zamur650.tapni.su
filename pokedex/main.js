@@ -52,7 +52,7 @@ var vue = new Vue({
             this.image = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${this.id}.png`
           }
         }).catch( err => {
-          alert('Error!' + err);
+          alert(err);
         });
     }
   }
