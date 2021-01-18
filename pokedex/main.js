@@ -30,7 +30,7 @@ var vue = new Vue({
           this.type[0] = response.types[0].type.name;
           try {
             this.type[1] = '/' + response.types[1].type.name;
-          } catch{
+          } catch {
             this.type[1] = '';
           }
           this.hp = response.stats[0].base_stat;
@@ -42,16 +42,16 @@ var vue = new Vue({
           this.height = response.height;
           this.weight = response.weight;
           this.moves = '';
-          for (let i = 0; i in response.moves; i++){
+          for (let i = 0; i in response.moves; i++) {
             P.getMoveByName(response.moves[i].move.name).then(response => {
-              this.moves += `${response.name}: accuracy: ${response.accuracy}, damage class: ${response.damage_class.name}, type: ${response.type.name}, pp: ${response.pp}\n`;
+              this.moves += `${response.name}: power: ${response.power}, accuracy: ${response.accuracy}, damage class: ${response.damage_class.name}, type: ${response.type.name}, pp: ${response.pp}\n`;
             });
           }
 
           if (this.image == null) {
             this.image = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${this.id}.png`
           }
-        }).catch( err => {
+        }).catch(err => {
           alert(err);
         });
     }
