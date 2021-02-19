@@ -18,7 +18,7 @@ var vue = new Vue({
     speed: 0,
     height: 0,
     weight: 0,
-    moves: 'none'
+    moves: ['none']
   },
   methods: {
     pokemonName() {
@@ -36,15 +36,15 @@ var vue = new Vue({
           this.hp = response.stats[0].base_stat;
           this.attack = response.stats[1].base_stat;
           this.defense = response.stats[2].base_stat;
-          this.special_attack = response.stats[3].base_stat;
+          this.special_attack = response.stats[3].base_stat; //:key="item.message"
           this.special_defense = response.stats[4].base_stat;
           this.speed = response.stats[5].base_stat;
           this.height = response.height;
           this.weight = response.weight;
-          this.moves = '';
+          this.moves = [];
           for (let i = 0; i in response.moves; i++) {
             P.getMoveByName(response.moves[i].move.name).then(response => {
-              this.moves += `${response.name}: power: ${response.power}, accuracy: ${response.accuracy}, damage class: ${response.damage_class.name}, type: ${response.type.name}, pp: ${response.pp}\n`;
+              this.moves[i] = `${response.name}: power: ${response.power}, accuracy: ${response.accuracy}, damage class: ${response.damage_class.name}, type: ${response.type.name}, pp: ${response.pp}\n`;
             });
           }
 

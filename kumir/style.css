@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+body {
+  background: #2b2b2b;
+  color: white;
+  padding: 10px;
+  font-family: 'Noto Sans TC', sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.searchBlock {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #474747;
+  border-radius: 5px;
+  width: 360px;
+}
+
+.searchBlock input, .searchBlock button {
+  background-color: #474747;
+  border: none;
+  color: white;
+}
+
+.searchBlock input {
+  height: 40px;
+  width: 300px;
+}
+
+.searchBlock button {
+  height: 46px;
+  width: 46px;
+}
+/*# sourceMappingURL=style.css.map */

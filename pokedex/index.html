@@ -25,7 +25,11 @@
     <p>Summary: {{ attack + defense + hp + special_attack + special_defense + speed }}</p>
     <p>Height: {{ height }}</p>
     <p>Weight: {{ weight }}</p>
-    <p>Moves: {{ moves }}</p>
+    <p>Moves:</p>
+    <p v-for="i in moves">
+      {{ i }}
+    </p>
+    <p>Total Moves: {{ moves.length }}</p>
   </div>  
   <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
