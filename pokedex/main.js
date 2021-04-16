@@ -24,6 +24,7 @@ var vue = new Vue({
     pokemonName() {
       P.getPokemonByName(this.input.toLowerCase())
         .then(response => {
+          console.log(response)
           this.image = response.sprites.front_default;
           this.name = response.name;
           this.id = response.id;
@@ -36,7 +37,7 @@ var vue = new Vue({
           this.hp = response.stats[0].base_stat;
           this.attack = response.stats[1].base_stat;
           this.defense = response.stats[2].base_stat;
-          this.special_attack = response.stats[3].base_stat; //:key="item.message"
+          this.special_attack = response.stats[3].base_stat;
           this.special_defense = response.stats[4].base_stat;
           this.speed = response.stats[5].base_stat;
           this.height = response.height;

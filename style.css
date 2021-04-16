@@ -22,7 +22,8 @@ nav img {
   width: 100%;
   padding-top: 1px;
   height: 100vh;
-  background: url("assets/images/top-image.png") center;
+  background: url("https://picsum.photos/2000");
+  background-size: cover;
   text-align: center;
   color: white;
   font-size: large;
@@ -35,11 +36,13 @@ nav img {
 .projects {
   padding-top: 1px;
   text-align: center;
-  background-color: #a8ffb4;
+  background: url("https://picsum.photos/1050");
+  background-size: cover;
 }
 
 .shop {
-  background-color: #2b3135;
+  background: url("https://picsum.photos/1050");
+  background-size: cover;
   padding-top: 1px;
   text-align: center;
   color: white;
@@ -76,7 +79,8 @@ nav img {
 .know {
   text-align: center;
   padding-top: 1px;
-  background: url("assets/images/know.png");
+  background: url("https://picsum.photos/1000");
+  background-size: cover;
   color: white;
 }
 
