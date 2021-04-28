@@ -1,113 +1,111 @@
 <!DOCTYPE html>
-<html lang='ru'>
+<html lang="ru">
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Замур</title>
-	<link rel='stylesheet' href='style.css'>
-	<link rel='shortcut icon' href='assets/images/logo.ico'>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="assets/images/logo.ico">
 </head>
 <body>
-	<div id='vue'>
-		<nav>
-			<a href='index.html'><img src='assets/icons/home.svg'></a>
-			<a href='buy.html'><img src='assets/icons/shopping-cart.svg'></a>
-		</nav>
+	<nav>
+		<a href="index.html"><img src="assets/icons/home.svg"></a>
+		<a href="buy.html"><img src="assets/icons/shopping-cart.svg"></a>
+	</nav>
 
-		<div class='imageTop'>
-			<h1>Рыбин Алексей</h1>
-			<h3>Разработка веб приложений</h3>
-		</div>
+	<div class="imageTop">
+		<h1>Рыбин Алексей</h1>
+		<h3>Разработка веб приложений</h3>
+	</div>
 
-		<div class='projects'>
-			<h1>Мои проекты</h1>
-			<div class='list'>
-				<div class='block'>
-					<h1>Zamur650.<br>github.io</h1>
-					<img src='assets/images/futureWeb.jpg'>
-					<p>Сайт про меня</p>
-					<button v-on:click='goToZm()'>Перейти</button>
-				</div>
-				<div class='block'>
-					<h1>FurretBot</h1>
-					<img src='assets/images/futureWeb.jpg'>
-					<p>Discord бот</p>
-					<button v-on:click='goToVkSay'>Связаться</button>
-				</div>
-				<div class='block'>
-					<h1>Pokedex</h1>
-					<img src='assets/images/futureWeb.jpg'>
-					<p>Pokedex с покемонами</p>
-					<button  v-on:click='goToPd()'>Перейти</button>
-				</div>
-				<div class='block'>
-					<h1>Сайт</h1>
-					<img src='assets/images/futureWeb.jpg'>
-					<p>Будующий сайт</p>
-					<button v-on:click='goToZm()'>Перейти</button>
-				</div>
-				<div class='block'>
-					<h1>Сайт</h1>
-					<img src='assets/images/futureWeb.jpg'>
-					<p>Будующий сайт</p>
-					<button v-on:click='goToZm()'>Перейти</button>
-				</div>
+	<div class="projects">
+		<h1>Мои проекты</h1>
+		<div class="list">
+			<div class="block">
+				<h1>Zamur650.<br>github.io</h1>
+				<img src="assets/images/futureWeb.jpg">
+				<p>Сайт про меня</p>
+				<button>Перейти</button>
 			</div>
-		</div>
-
-		<div class='know'>
-			<h1>Я знаю такие языки, фреймворки и библиотеки:</h1>
-			<div class='knowList'>
-				<div class='html'>
-					<img src='assets/images/html.png'>
-					<h2>html</h2>
-				</div>
-				<div class='css'>
-					<img src='assets/images/css.png'>
-					<h2>css</h2>
-				</div>
-				<div class='sass'>
-					<img src='assets/images/sass.png'>
-					<h2>sass</h2>
-				</div>
-				<div class='js'>
-					<img src='assets/images/js.png'>
-					<h2>js</h2>
-				</div>
-				<div class='ts'>
-					<img src='assets/images/ts.svg'>
-					<h2>ts</h2>
-				</div>		
-				<div class='lua'>
-					<img src='assets/images/lua.png'>
-					<h2>lua</h2>
-				</div>			
-				<div class='vue-js'>
-					<img src='assets/images/vue-js.png'>
-					<h2>vue</h2>
-				</div>
-				<div class='discord-js'>
-					<img src='assets/images/discord-js.png'>
-					<h2>discord.js</h2>
-				</div>
+			<div class="block">
+				<h1>FurretBot</h1>
+				<img src="assets/images/futureWeb.jpg">
+				<p>Discord бот</p>
+				<button onclick="goTo('discord.gg/h5bPqBHvUB/')">Связаться</button>
 			</div>
-		</div>
-
-		<div class='end'>
-			<h1>Рыбин Алексей</h1>
-			<p>Начинающий frontend разработчик</p>
-			<button v-on:click='goToVkSay()'>Связаться</button>
-			<div class='images'>
-				<a href='https://www.youtube.com/channel/UCkr6i6Gnv5ESl8532iLLwDw'><img src='assets/icons/brand-youtube.svg'></a>
-				<a href='https://vk.com/rubin_alexey'><img src='assets/icons/brand-vk.svg'></a>
-				<a href='https://www.twitch.tv/zamur_mur'><img src='assets/icons/brand-twitch.svg'></a>
-				<a href='https://www.instagram.com/zamur_mur'><img src='assets/icons/brand-instagram.svg'></a>
-				<a href='https://www.facebook.com/profile.php?id=100053081611770'><img src='assets/icons/brand-facebook.svg'></a>
-				<a href='https://github.com/Zamur650'><img src='assets/icons/brand-github.svg'></a>
+			<div class="block">
+				<h1>Pokedex</h1>
+				<img src="assets/images/futureWeb.jpg">
+				<p>Pokedex с покемонами</p>
+				<button onclick="goTo('pokedex/index.html')">Перейти</button>
+			</div>
+			<div class="block">
+				<h1>Bananchik204.github.io</h1>
+				<img src="assets/images/futureWeb.jpg">
+				<p>Определённо да</p>
+				<button onclick="goTo('bananchik204.github.io/')">Перейти</button>
+			</div>
+			<div class="block">
+				<h1>Сайт</h1>
+				<img src="assets/images/futureWeb.jpg">
+				<p>Будующий сайт</p>
+				<button>Перейти</button>
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-	<script src='main.js'></script>
+
+	<div class="know">
+		<h1>Я знаю такие языки, фреймворки и библиотеки:</h1>
+		<div class="knowList">
+			<div class="html">
+				<img src="assets/images/html.png">
+				<h2>html</h2>
+			</div>
+			<div class="css">
+				<img src="assets/images/css.png">
+				<h2>css</h2>
+			</div>
+			<div class="sass">
+				<img src="assets/images/sass.png">
+				<h2>sass</h2>
+			</div>
+			<div class="js">
+				<img src="assets/images/js.png">
+				<h2>js</h2>
+			</div>
+			<div class="ts">
+				<img src="assets/images/ts.svg">
+				<h2>ts</h2>
+			</div>		
+			<div class="lua">
+				<img src="assets/images/lua.png">
+				<h2>lua</h2>
+			</div>			
+			<div class="vue-js">
+				<img src="assets/images/vue-js.png">
+				<h2>vue</h2>
+			</div>
+			<div class="discord-js">
+				<img src="assets/images/discord-js.png">
+				<h2>discord.js</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="end">
+		<h1>Рыбин Алексей</h1>
+		<p>Начинающий frontend разработчик</p>
+		<button onclick="goTo('vk.com/im?sel=550222194')">Связаться</button>
+		<div class="images">
+			<a href="www.youtube.com/channel/UCkr6i6Gnv5ESl8532iLLwDw"><img src="assets/icons/brand-youtube.svg"></a>
+			<a href="vk.com/rubin_alexey"><img src="assets/icons/brand-vk.svg"></a>
+			<a href="www.twitch.tv/zamur_mur"><img src="assets/icons/brand-twitch.svg"></a>
+			<a href="www.instagram.com/zamur_mur"><img src="assets/icons/brand-instagram.svg"></a>
+			<a href="www.facebook.com/profile.php?id=100053081611770"><img src="assets/icons/brand-facebook.svg"></a>
+			<a href="github.com/Zamur650"><img src="assets/icons/brand-github.svg"></a>
+		</div>
+	</div>
+	<script src="cdn.jsdelivr.net/npm/vue"></script>
+	<script src="main.js"></script>
 </body>
 </html>

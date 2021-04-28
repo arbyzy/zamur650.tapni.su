@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Noto+Serif:ital@1&display=swap");
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   resize: none;
   margin: 0;
 }
@@ -11,7 +11,6 @@ nav {
   width: 100%;
   background-color: white;
 }
-
 nav img {
   cursor: pointer;
   padding: 14px 16px;
@@ -28,9 +27,8 @@ nav img {
   color: white;
   font-size: large;
 }
-
 .imageTop h1 {
-  padding-top: 20%;
+  padding-top: 45vh;
 }
 
 .projects {
@@ -69,7 +67,6 @@ nav img {
   margin-left: 40px;
   margin-right: 40px;
 }
-
 .block img {
   border-radius: 20px;
   width: 35vh;
@@ -90,14 +87,14 @@ nav img {
   overflow: auto;
   text-align: center;
 }
-
 .knowList img {
   border-radius: 20px;
-  height: 30vh;
+  width: 12.5vw;
   margin: 20px;
 }
 
 button {
+  background-color: #92ff8a;
   color: black;
   border-color: black;
   background: none;
@@ -105,13 +102,12 @@ button {
   border-radius: 5px 5px 5px 5px;
   height: 40px;
 }
-
 button:hover {
   background-color: #f2fff1;
 }
 
 h1 {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
 }
 
 .end {
@@ -120,20 +116,16 @@ h1 {
   color: white;
   padding: 20px;
 }
-
 .end img {
   width: 60px;
   margin: 10px;
   filter: invert(100%);
 }
-
 .end button {
   margin: 10px;
   color: white;
   border-color: white;
 }
-
 .end button:hover {
   background-color: #414141;
 }
-/*# sourceMappingURL=style.css.map */

@@ -29,7 +29,7 @@ nav {
 	color: white;
 	font-size: large;
 	h1{
-		padding-top: 20%;
+		padding-top: 45vh;
 	}
 }
 
@@ -93,12 +93,13 @@ nav {
 	text-align: center;
 	img{
 		border-radius: 20px;
-		height: 30vh;
+		width: 12.5vw;
 		margin: 20px;
 	}
 }
 
 button {
+	background-color: rgb(146, 255, 138);
 	color: black;
 	border-color: black;
 	background: none;
