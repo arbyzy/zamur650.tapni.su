@@ -63,9 +63,11 @@ h1{
 }
 
 .block {
+	width: 20em;
 	border-radius: 1cm;
 	background-color: white;
 
+	margin: 5mm;
 	padding-bottom: 1cm;
 
 	display: -ms-flexbox;
