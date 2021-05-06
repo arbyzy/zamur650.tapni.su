@@ -25,18 +25,38 @@ h1 {
 }
 
 nav {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+nav .navBlock {
   position: fixed;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-  margin: 1em;
-  padding: 3mm;
+  margin: 5mm;
+  padding: 2mm;
   border-radius: 1em;
   background-color: white;
 }
 nav img {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-  width: 1cm;
+  width: 7.5mm;
   margin: 1mm;
-  padding: 3mm;
+  padding: 1mm;
   border-radius: 25%;
   background-color: white;
 }
