@@ -7,20 +7,38 @@ body {
 }
 
 button {
-  color: black;
-  border-color: black;
-  background: none;
-  border: 2px solid;
-  border-radius: 1cm;
+  background-color: #0093E9;
+  background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+  color: white;
+  border-width: 0;
+  border-radius: 5mm;
   height: 1.5cm;
   width: 3cm;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }
 button:hover {
-  background-color: #fffbff;
+  background-image: linear-gradient(90deg, #0082ce 0%, #68a8a1 100%);
 }
 
 h1 {
   font-family: "Noto Serif", serif;
+}
+
+nav {
+  position: fixed;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  margin: 1em;
+  padding: 3mm;
+  border-radius: 1em;
+  background-color: white;
+}
+nav img {
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  width: 1cm;
+  margin: 1mm;
+  padding: 3mm;
+  border-radius: 25%;
+  background-color: white;
 }
 
 .imageTop {
@@ -44,7 +62,7 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
   background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 50%, #FFCC70 100%);
+  background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 50%, #FFCC70 100%);
   text-align: center;
   color: white;
 }
@@ -52,10 +70,11 @@ h1 {
 .projects {
   text-align: center;
   padding: 1cm;
-  background-color: #f1f1f1;
+  background-color: white;
 }
 
 .block {
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
   width: 20em;
   border-radius: 1cm;
   background-color: white;
@@ -85,15 +104,14 @@ h1 {
   width: 20em;
 }
 
-.know {
+.instruments {
   text-align: center;
   background: #f88cff;
   background: linear-gradient(45deg, #f88cff 0%, #8cb9ff 100%);
   padding: 1cm;
-  color: white;
 }
-.know img {
-  border-radius: 20px;
+.instruments img {
+  border-radius: 0;
   width: 10em;
   margin: 1cm;
 }
@@ -123,17 +141,13 @@ h1 {
   background-color: #383838;
   text-align: center;
   color: white;
-  padding: 20px;
+  padding: 2em;
 }
 .end img {
-  width: 1.5cm;
-  margin: 10px;
-  filter: invert(100%);
-}
-.end button {
-  color: white;
-  border-color: white;
-}
-.end button:hover {
-  background-color: #414141;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  width: 1cm;
+  margin: 1em;
+  padding: 3mm;
+  border-radius: 25%;
+  background-color: white;
 }
