@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Noto+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&family=Noto+Serif:ital@1&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Comfortaa", cursive;
   resize: none;
@@ -7,17 +11,20 @@ body {
 }
 
 button {
-  color: white;
-  border-width: 0;
-  border-radius: 5mm;
-  height: 1.5cm;
-  width: 3cm;
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
   background-color: #0093E9;
   background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  border: none;
+  margin: 1em;
+  padding: 1em 2em;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10cm;
 }
 button:hover {
-  background-image: linear-gradient(90deg, #0082ce 0%, #68a8a1 100%);
+  background-position: right center;
 }
 
 h1 {
@@ -44,6 +51,10 @@ nav img {
   padding: 1mm;
   border-radius: 25%;
   background-color: white;
+  transition: 0.5s;
+}
+nav img:hover {
+  background-color: #b0d5eb;
 }
 
 .imageTop {
@@ -54,11 +65,14 @@ nav img {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  background-image: url("./background.jpg");
+  background-image: url("assets/images/background.gif");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.imageTop h1 {
+  font-family: "Dancing Script", cursive;
 }
 
 .logo {
