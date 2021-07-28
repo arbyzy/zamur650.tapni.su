@@ -139,3 +139,18 @@ nav img:hover {
   border-radius: 25%;
   background-color: white;
 }
+
+@media only screen and (max-device-width: 480px) {
+  nav .navBlock {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  nav img {
+    width: 2em;
+  }
+}
