@@ -1,118 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Alexiy Rybin</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="assets/images/logo.ico">
-</head>
-<body>
-  <nav>
-		<div class="navBlock">
-			<a href="#start"><img src="assets/icons/home.svg" alt=""></a>
-			<a href="#projects"><img src="assets/icons/apps.svg" alt=""></a>
-			<a href="#instruments"><img src="assets/icons/box.svg" alt=""></a>
-			<a href="#end"><img src="assets/icons/arrow-down.svg" alt=""></a>
-		</div>
-	</nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alexiy Rubin</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/images/logo.ico" />
+  </head>
+  <body>
+    <nav>
+      <div class="navBlock">
+        <a href="#start"><img src="assets/icons/home.svg" alt="Start" /></a>
+        <a href="#projects"
+          ><img src="assets/icons/apps.svg" alt="Projects"
+        /></a>
+        <a href="#instruments"
+          ><img src="assets/icons/box.svg" alt="Instruments"
+        /></a>
+        <a href="#end"><img src="assets/icons/arrow-down.svg" alt="End" /></a>
+      </div>
+    </nav>
 
-	<a id="start"></a>
-	<div class="imageTop">
-		<img src="https://avatars.githubusercontent.com/u/57483029?v=4" alt="Logo" class="logo">
-		<h1>Alexiy Rybin</h1>
-		<h3>Junior developer</h3>
-	</div>
+    <a id="start"></a>
+    <div class="imageTop">
+      <img
+        src="https://avatars.githubusercontent.com/u/57483029?v=4"
+        alt="Logo"
+        class="logo"
+      />
+      <h1>Alexiy Rubin</h1>
+      <h3>Junior developer</h3>
+    </div>
 
-	<a id="projects"></a>
-	<div class="projects">
-		<h1>My projects</h1>
-		<div class="list">
-			<div class="block">				
-				<img src="assets/images/Zamur650.png">
-				<h1>Zamur650.<br>github.io</h1>
-				<button>Go</button>
-			</div>
-			<div class="block">				
-				<img src="assets/images/Tapris.png">
-				<h1>Tapris bot</h1>
-				<button onclick="goTo('tapris-page/')">Go</button>
-			</div>
-			<div class="block">				
-				<img src="assets/images/Furret.png">
-				<h1>Furret bot</h1>
-				<button onclick="goTo('furret-page/')">Go</button>
-			</div>
-			<div class="block">				
-				<img src="assets/images/Pokedex.png">
-				<h1>Pokedex</h1>
-				<button onclick="goTo('pokedex/')">Go</button>
-			</div>
-			<div class="block">
-				<img src="assets/images/Bananchik204.png">
-				<h1>Bananchik204.<br>github.io</h1>
-				<button onclick="goTo('https://bananchik204.github.io/')">Go</button>
-			</div>
-			<div class="block">			
-				<img src="assets/images/ShinyHunt.png">
-				<h1>Shiny hunt</h1>
-				<button onclick="goTo('shiny-hunt/')">Go</button>
-			</div>
-			<div class="block">			
-				<img src="assets/images/WebClock.png">
-				<h1>Clock</h1>
-				<button onclick="goTo('web-clock/')">Go</button>
-			</div>
-		</div>
-	</div>
+    <a id="projects"></a>
+    <div class="projects">
+      <h1>My projects</h1>
+      <div class="list">
+        <div class="block">
+          <img src="assets/images/Zamur650.png" alt="website image" />
+          <h1>Zamur650.<br />github.io</h1>
+          <button disabled>Go</button>
+        </div>
+        <div class="block">
+          <img src="assets/images/Tapris.png" alt="website image" />
+          <h1>Tapris bot</h1>
+          <button disabled>Go</button>
+        </div>
+        <div class="block">
+          <img src="assets/images/Furret.png" alt="website image" />
+          <h1>Furret bot</h1>
+          <button disabled>Go</button>
+        </div>
+        <div class="block">
+          <img src="assets/images/Pokedex.png" alt="website image" />
+          <h1>Pokedex</h1>
+          <button disabled>Go</button>
+        </div>
+        <div class="block">
+          <img src="assets/images/Bananchik204.png" alt="website image" />
+          <h1>Bananchik204.<br />github.io</h1>
+          <button disabled>Go</button>
+        </div>
+        <div class="block">
+          <img src="assets/images/ShinyHunt.png" alt="website image" />
+          <h1>Shiny hunt</h1>
+          <button disabled>Go</button>
+        </div>
+        <div class="block">
+          <img src="assets/images/WebClock.png" alt="website image" />
+          <h1>Clock</h1>
+          <button disabled>Go</button>
+        </div>
+      </div>
+    </div>
 
-	<a id="instruments"></a>
-	<div class="instruments">
-		<h1>Skills</h1>
-		<div class="list">			
-			<div class="block">
-				<h1>Web pages</h1>
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>SCSS</li>
-					<li>JS</li>
-					<li>TS</li>
-					<li>VUE</li>
-				</ul>
-			</div>
-			<div class="block">
-				<h1>Bots</h1>
-				<ul>
-					<li>JS</li>
-					<li>TS</li>
-					<li>Python</li>
-				</ul>
-			</div>
-			<div class="block">
-				<h1>Games</h1>
-				<ul>
-					<li>JS</li>
-					<li>TS</li>
-					<li>C#</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+    <a id="instruments"></a>
+    <div class="instruments">
+      <h1>Skills</h1>
+      <div class="list">
+        <div class="block">
+          <h1>Web pages</h1>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SCSS</li>
+            <li>JS</li>
+            <li>TS</li>
+            <li>VUE</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h1>Bots</h1>
+          <ul>
+            <li>JS</li>
+            <li>TS</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h1>Games</h1>
+          <ul>
+            <li>JS</li>
+            <li>TS</li>
+            <li>C#</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-	<end id="end"></end>
-	<div class="end">
-		<h1>Alexiy Rubin</h1>
-		<h3>Junior developer</h3>
-		<div class="images">
-			<a href="https://vk.com/rubin_alexey"><img src="assets/icons/brand-vk.svg"></a>
-			<a href="https://twitch.tv/zamur_mur"><img src="assets/icons/brand-twitch.svg"></a>
-			<a href="https://instagram.com/zamur_mur"><img src="assets/icons/brand-instagram.svg"></a>
-			<a href="https://facebook.com/profile.php?id=100053081611770"><img src="assets/icons/brand-facebook.svg"></a>
-			<a href="https://github.com/Zamur650"><img src="assets/icons/brand-github.svg"></a>
-			<a href="https://t.me/Zamur650"><img src="assets/icons/brand-telegram.svg"></a>
-		</div>
-	</div>
-	<script src="main.js"></script>
-</body>
+    <end id="end"></end>
+    <div class="end">
+      <h1>Alexiy Rubin</h1>
+      <h3>Junior developer</h3>
+      <div class="images">
+        <a href="#"><img src="assets/icons/brand-vk.svg" alt="Vkontakte" /></a>
+        <a href="https://twitch.tv/tapnisu"
+          ><img src="assets/icons/brand-twitch.svg" alt="Twitch"
+        /></a>
+        <a href="https://instagram.com/tapnisu"
+          ><img src="assets/icons/brand-instagram.svg" alt="Instagram"
+        /></a>
+        <a href="#"
+          ><img src="assets/icons/brand-facebook.svg" alt="Facebook"
+        /></a>
+        <a href="https://github.com/tapnisu"
+          ><img src="assets/icons/brand-github.svg" alt="Github"
+        /></a>
+        <a href="https://t.me/tapnisu"
+          ><img src="assets/icons/brand-telegram.svg" alt="Telegram"
+        /></a>
+      </div>
+    </div>
+  </body>
 </html>
